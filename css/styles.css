@@ -375,6 +375,36 @@ body {
   margin-right: 30px;
 }
 
+/* текст с фоном */
+.product-thumb {
+  position: relative;
+  display: flex;
+}
+
+.background-tumb {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 70px;
+  width: 100%;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.background-tumb > .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
 /* Наша команда */
 .team {
   background-color: var(--bg-team-color);
