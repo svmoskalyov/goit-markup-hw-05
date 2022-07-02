@@ -264,8 +264,8 @@ body {
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0; */
+  /* pointer-events: none; */
 }
 
 .modal {
@@ -274,10 +274,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-height: 400px;
-  min-width: 600px;
+  min-height: 528px;
+  min-width: 581px;
 
   background-color: #fff;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 /* Особенности */
