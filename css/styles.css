@@ -637,20 +637,42 @@ body {
   text-decoration: none;
 }
 
-.card-border {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+/* текст на фоне */
+.card-thumb {
+  position: relative;
+  display: flex;
+}
 
-  border-right: 1px solid var(--card-border);
-  border-bottom: 1px solid var(--card-border);
-  border-left: 1px solid var(--card-border);
+.text-thumb {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.card-link:hover .text-thumb {
+  opacity: 1;
+}
+
+.text-thumb > .description {
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-white-color);
+}
+
+.card-border {
+  padding: 24px 20px;
+  border: 1px solid var(--card-border);
+  border-top: none;
 }
 
 .card-link:hover,
 .card-link:focus {
-  background-color: var(--accent-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -679,12 +701,14 @@ body {
   color: var(--text-secondory-color);
 }
 
-.cards .description {
+/* .cards .description {
+
   display: none;
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--text-secondory-color);
-}
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-white-color);
+} */
