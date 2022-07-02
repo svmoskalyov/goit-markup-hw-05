@@ -253,6 +253,7 @@ body {
   background-color: var(--accent-color);
 }
 
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -263,10 +264,14 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+/* 
 .backdrop.is-hidden {
-  /* opacity: 0; */
-  /* pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
 }
+*/
+
 
 .modal {
   position: absolute;
@@ -280,11 +285,56 @@ body {
   background-color: #fff;
 }
 
-.modal-icon {
+
+
+.modal-button {
+  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
-}
+
+  margin: 0;
+  padding: 0;
+
+
+  /* height: 30px; */
+  /* width: 30px; */
+
+  /* border: 0ch; */
+  /* border-radius: 4px; */
+  /* border-radius: 50%; */
+  /* cursor: pointer; */
+
+  /* background-color: white; */
+
+  /* outline: 2px solid green; */
+
+  /* 
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--bg-icon-color);
+  border-radius: 50%;
+  */
+  
+} 
+
+
+
+/* .modal-icon { */
+  /* position: absolute; */
+  /* top: 8px; */
+  /* right: 8px; */
+  /* border: 1px yellow; */
+
+  /* fill: currentColor; */
+  /* fill: white; */
+  /* outline: 2px solid tomato; */
+/* } */
+
 
 /* Особенности */
 .features {
