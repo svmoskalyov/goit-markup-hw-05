@@ -264,11 +264,11 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .modal {
   position: absolute;
