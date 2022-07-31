@@ -28,6 +28,7 @@
   --link-footer-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --card-border: #eee;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Тело страницы */
@@ -655,7 +656,7 @@ body {
   text-decoration: none;
 
   box-shadow: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .card-link:hover,
@@ -684,7 +685,7 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100.2%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--timing-function);
 }
 
 .card-link:hover .text-thumb,
