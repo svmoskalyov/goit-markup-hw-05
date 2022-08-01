@@ -110,8 +110,9 @@ body {
   width: 44px;
   height: 44px;
 
-  color: var(--bg-icon-color);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .social-icon {
@@ -160,6 +161,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-primary-color);
   text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -205,6 +208,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-secondory-color);
   text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .icon.envelope,
@@ -487,7 +492,12 @@ body {
   margin-left: 32px;
 }
 
-.team-list .social-link:hover {
+.team-list .social-link {
+  color: var(--bg-icon-color);
+}
+
+.team-list .social-link:hover,
+.team-list .social-link:focus {
   color: var(--text-white-color);
   background-color: var(--accent-color);
 }
@@ -512,13 +522,16 @@ body {
 
   border: 1px solid var(--bg-icon-color);
   border-radius: 4px;
+
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .client-icon {
   fill: currentColor;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -555,6 +568,8 @@ body {
   line-height: 1.71;
   color: var(--link-footer-color);
   text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .address .location {
@@ -594,8 +609,8 @@ body {
   background: var(--bg-icon-footer-color);
 }
 
-.page-footer .social-link:hover {
-  color: var(--text-white-color);
+.page-footer .social-link:hover,
+.page-footer .social-link:focus {
   background-color: var(--accent-color);
 }
 
