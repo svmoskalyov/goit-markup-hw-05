@@ -232,11 +232,6 @@ body {
   padding-bottom: 200px;
 }
 
-/* .hero.container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-} */
-
 .hero.overlay {
   max-width: 1600px;
   height: 600px;
@@ -472,7 +467,6 @@ body {
 
 .team-list .img {
   display: block;
-  /* margin-bottom: 30px; */
 }
 
 .team-list .about {
@@ -501,7 +495,6 @@ body {
 .team-list .social-icons {
   margin-top: 0;
   margin-right: 32px;
-  /* margin-bottom: 30px; */
   margin-left: 32px;
 }
 
@@ -749,7 +742,6 @@ body {
 .cards .project {
   margin-top: 0;
   margin-bottom: 4px;
-  /* padding-bottom: 4px; */
 
   font-weight: 700;
   font-size: 18px;
